@@ -8,6 +8,10 @@ export default function Movie ( {title, poster_path, vote_average, overview}) {
     return(
 
         <div className='movieContainer'>
+            <MovieDescription 
+            key={title}
+            title={title}
+            overview={overview}/>
             <div className='movieImg'>
                 <img src= {baseUrl + poster_path} alt="영화포스터"/>
             </div>
@@ -15,11 +19,6 @@ export default function Movie ( {title, poster_path, vote_average, overview}) {
                 <h4>{title}</h4>
                 <span>{vote_average}</span>
             </div>
-            <MovieDescription 
-            key={title}
-            title={title}
-            overview={overview}/>
-
         </div>
 
     )

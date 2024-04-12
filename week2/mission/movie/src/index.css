@@ -1,32 +1,35 @@
 body{
+  width: 100;
   background-color: rgb(57, 53, 91);
 }
 
 .movieContainer {
-  width : 250px;
+  position: relative;
+  width : 350px;
   background-color: rgb(97, 95, 118);
   color: white;
-  margin : 16px;
   border-radius: 5px;
-  max-height: 480px;
+  height: 650px;
 }
 
 .movieContainer img {
-  max-width: 100%;
+  width: 100%;
+  border-radius: 5px;
 }
 
 .appContainer{
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center ;
+  gap: 16px;
 }
 
 .movieInfo {
   display: flex;
   height : 30px;
-  padding: 20px;
   justify-content: space-between;
-  align-items: center;
+  margin: 20px;
+  font-size: 20px;
 }
 
 .movieInfo h4 {
@@ -37,24 +40,25 @@ body{
   margin-left: 3px;
 }
 
-.movieContainer:hover .movieImg img,
-.movieContainer:hover .movieInfo {
-  opacity: 0.3;
+.movieOverview:hover {
+  opacity: 0.7;
 }
 
 .movieOverview {
-  position: relative;
-  top: -90%; /* movieContainer의 위쪽에 위치하도록 설정 */
-  left: 50%;
-  transform: translateX(-50%);
-  width: 200px;
-  height: auto;
+  position: absolute;
+  z-index: 1;
+  width: 350px;
+  height: 650px;
+  border-radius: 5px;
   color: rgb(210, 210, 210);
-  padding: 10px;
+  background-color: black;
+  font-size: 17px;
   opacity: 0;
-  font-size: 13px;
+  justify-content: center;
 }
 
-.movieContainer:hover .movieOverview {
-  opacity: 1;
+.movieContainer h3, .movieContainer p{
+  justify-content: space-between;
+  margin: 20px;
+  margin-top : 30px;
 }

@@ -1,11 +1,11 @@
-import './App.css';
+import './index.css';
 import {movies} from './data';
 import Movie from './assets/Movie';
 
 function App() {
 
   return (
-    <div>
+
       <div className='appContainer'>
         { 
           movies.results.map((item) => {
@@ -20,7 +20,7 @@ function App() {
           })
         }
       </div>
-    </div>
+    
   );
 }
 
