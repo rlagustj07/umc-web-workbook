@@ -1,0 +1,60 @@
+body{
+  background-color: rgb(57, 53, 91);
+}
+
+.movieContainer {
+  width : 250px;
+  background-color: rgb(97, 95, 118);
+  color: white;
+  margin : 16px;
+  border-radius: 5px;
+  max-height: 480px;
+}
+
+.movieContainer img {
+  max-width: 100%;
+}
+
+.appContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center ;
+}
+
+.movieInfo {
+  display: flex;
+  height : 30px;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movieInfo h4 {
+  margin : 0;
+}
+
+.movieInfo span {
+  margin-left: 3px;
+}
+
+.movieContainer:hover .movieImg img,
+.movieContainer:hover .movieInfo {
+  opacity: 0.3;
+}
+
+.movieOverview {
+  position: relative;
+  top: -90%; /* movieContainer의 위쪽에 위치하도록 설정 */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: auto;
+  color: rgb(210, 210, 210);
+  padding: 10px;
+  opacity: 0;
+  font-size: 13px;
+}
+
+.movieContainer:hover .movieOverview {
+  opacity: 1;
+}
