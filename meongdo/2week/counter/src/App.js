@@ -4,12 +4,12 @@ function App() {
   const [count, setCount] = useState(0);
 
   const increase = () => {
-    setCount((count) => count + 1);
+    setCount(count + 1);
     console.log('increase가 클릭됨');
   };
 
   const decrease = () => {
-    setCount((count) => count - 1);
+    setCount(count - 1);
     console.log('decrease가 클릭됨');
   }
 
